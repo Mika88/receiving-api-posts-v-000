@@ -6741,3 +6741,22 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 392ms (Views: 369.6ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/posts/new" for 47.197.192.160 at 2019-04-18 19:37:05 +0000
+Cannot render console from 47.197.192.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 47.197.192.160 at 2019-04-18 19:39:30 +0000
+Cannot render console from 47.197.192.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qBnTx5TU0rYEkrHT1gNkk1uFnDpYPRQJs1ZlkCPLo5fzIQaky3t5DF74fXS61krFCVrI37XmxVElXFHNRVqI7A==", "post"=>{"title"=>"", "description"=>""}}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["description", ""], ["created_at", "2019-04-18 19:39:30.061472"], ["updated_at", "2019-04-18 19:39:30.061472"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://165.227.81.218:32881/posts/15
+Completed 200 OK in 6ms (ActiveRecord: 3.3ms)
+
+
